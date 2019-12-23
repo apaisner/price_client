@@ -46,6 +46,7 @@ class Graph extends Component {
                 points: this.state.graphData
             }
         ];
+        // console.log(d3.timeFormat("%b %Y"))
         return (
             <div className="App">
                 <div>
@@ -58,7 +59,7 @@ class Graph extends Component {
                             isDate={true}
                             xLabel="Trade Date"
                             yLabel="Price at Close"
-                            xDisplay={d3.time.format("%b %Y")}
+                            xDisplay={d3.timeFormat("%b %Y")}
                         />
                     </div>
                 </div>
